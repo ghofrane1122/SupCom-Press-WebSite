@@ -1,0 +1,251 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #f8f4ef;
+    height: 100%;
+}
+
+section.top.container {
+    height: 100vh;
+    padding-top: 2%;
+}
+
+a.iconlink {
+    margin-inline: 2%;
+}
+
+.point {
+    color: red;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+a.nav-link {
+    color: black;
+}
+
+h1 {
+    margin-inline: 10%;
+}
+
+.test {
+    height: 100vh;
+}
+
+@media screen and (min-width: 997px) {
+
+    nav {
+        border-block: 1px solid black;
+    }
+}
+
+.fixed-top {
+    margin-inline: 8%;
+
+}
+
+.logo.fixed-top {
+    z-index: 50;
+}
+
+.row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+}
+
+.article-header {
+    background-color: pink;
+    padding: 5%;
+}
+
+.article-image {
+    background-color: white;
+
+
+}
+
+.title {
+    text-align: center;
+    padding-block: 5%;
+}
+
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Interview */
+
+.interview-list {
+    background-color: pink;
+    padding: 5%;
+}
+
+/* gallery pacte */
+img {
+    max-width: 100%;
+}
+
+.gallery_box li {
+    width: 33.333333%;
+    max-width: 100%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery_box {
+    padding: 0;
+    display: flow-root;
+}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.gallery_box li img {
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+
+.gallery_box li:nth-child(odd) {
+    height: 438px;
+}
+
+.gallery_box li:nth-child(odd) .box_data {
+    background: rgba(0, 0, 0, 0.17)
+}
+
+.gallery_box li:nth-child(even) .box_data {
+    background: rgba(0, 44, 255, 0.27)
+}
+
+.gallery_box .box_data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+.gallery_box .box_data span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    font-size: 24px;
+}
+
+.gallery_box li:hover .box_data {
+    background: rgba(229, 137, 172, 0.55)
+}
+
+
+footer {
+    height: 10%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-top: 1%;
+    border-top: 1px solid black;
+
+
+}
+
+
+.card {
+    transition: transform .5s;
+
+    margin: 0 !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    background: linear-gradient(to bottom, rgb(229, 137, 172), rgb(255, 255, 255));
+
+}
+
+
+/*********** gallery **********/
+.gallery,
+#dragger,
+#ring,
+.img,
+.vignette {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    user-select: none;
+}
+
+.gallery {
+    height: 50vh;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+#ring>.img {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ring-container {
+    position: absolute;
+    perspective: 2000px;
+    width: 300px;
+    height: 60vh;
+    left: 50%;
+    /* top: 35vh; */
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
+}
+
+#ring {
+    position: relative;
+}
+
+#dragger {
+    position: absolute;
+}
+
+.vignette {
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: linear-gradient(to left, #E4E2D5 12%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, #E4E2D5 88%); */
+    position: absolute;
+}
